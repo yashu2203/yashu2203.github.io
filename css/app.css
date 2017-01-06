@@ -159,6 +159,22 @@
                 background-color: #009688;
             }
             
+                .asp{
+                     width: 65%;
+                }
+
+                .web{
+                     width: 60%;
+                }
+
+                .sql{
+                     width: 40%;
+                }
+
+                .sp{
+                     width: 40%;
+                }
+
 
             #page{
                          display: block;
