@@ -30,6 +30,10 @@
                 navigateTo("https://plus.google.com/106419812150472354669");
             });    
 
+            $('#snap-icon').click(function(){
+                navigateTo("https://www.snapchat.com/add/yashu2203");
+            });      
+
             });
             
         
