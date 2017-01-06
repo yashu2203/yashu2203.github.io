@@ -1,0 +1,201 @@
+
+            *{
+                box-sizing: border-box;
+            }
+            
+            body,html{
+                margin: 0;
+              
+                background-color: #f1f1f1!important;
+            }
+            
+            .leftNav,.content{  
+                      width: 99.9%;
+                     position: relative;
+                    float: left;
+                    padding: 0 8px;
+                
+                }
+            
+            .content{
+                    padding-top: 5%;
+            }
+            
+          
+            
+            
+            
+            @media only screen and (min-width: 601px) {
+                
+                .leftNav{
+                       
+                      width: 33.33333%;
+                }
+                
+
+                    .leftNav > div{
+                        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+                    }                
+
+                .content{
+                    width: 66.66666%;
+                        padding-top:0;
+                        padding-bottom: 10px;
+                        background: white;
+                  
+                }
+
+            .content > div{
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+            }
+            
+                }
+            
+            img{
+                width: 100%;
+            }
+           
+            #leftNavHeader{
+                width: 100%;
+                position: relative;
+            }
+           
+            #headerName{
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    padding-left: 10px;
+
+            }
+            
+            .container{
+                padding: 0.01em 16px;
+                width: 100%;
+                background-color: white;
+            }
+           
+            .icon{
+                
+                padding-right: 10px;
+                padding-top: 15px;
+                font-size:18px;
+                color: #009688!important;
+                padding-left:10px;
+               
+            }
+            
+            .companyTitle{
+                   
+                    padding-top: 10px;
+                    font-size: 17px;
+                    font-weight: bold;
+            }
+            
+            .SkillsList{
+                padding-left: 30px;
+            }
+            
+            .SkillsList > p{
+                padding-bottom: 10px;
+                margin: 0;
+            }
+            
+            footer{
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                color: #fff!important;
+                background-color: #009688!important;
+                    font-size: 15px;
+                    line-height: 1.5;
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+            footer > i{
+                
+                transform: scale(1.2);
+                margin: 0 5px;
+                cursor: pointer;
+            }
+
+            footer > p{
+                padding-top:10px;
+            }
+        
+            .progress-bg{
+                border-radius: 10px;
+                display: block;
+                position: relative;
+                width: 90%;
+                height: 14px;
+                background-color: lightgray;
+            }
+             .progress-bar{
+                border-radius: 10px;
+                display: block;
+                position: relative;
+                text-align: center;
+                 width: 70%;
+                 padding-bottom: 3px;
+                    font-size: 11px;
+                 line-height: 12px;
+                background-color: #009688;
+            }
+            
+
+            #page{
+                         display: block;
+                        margin: 0 auto;
+                        margin-top: 16px;
+                        max-width: 1300px;
+            }
+            
+
+            .glyphicon-console, .glyphicon-education{
+               padding-left:10px;
+               font-size:30px;
+               padding-right:20px;
+               padding-bottom:20px;
+            }
+
+            #experiences,#studies{
+                padding-bottom:20px;
+            }
+
+            #experiences > div, #studies > div{
+                padding-left: 20px;padding-right: 10px;
+            }
+
+            #work-header-text,#education-header-text{
+
+                font-size: 30px;
+            }
+
+            #current-work{
+                background-color: #009688;
+                color: white;
+                padding: 4px 10px;
+                border-radius: 3px;
+            }
+
+            .glyphicon-calendar{
+                font-size: 17px;
+                padding-right:10px;
+            }
+
+            .duration{
+                color: #009688!important;
+            }
+
+            .glyphicon-map-marker{
+                font-size: 17px;
+                padding-right:10px;
+                color: #009688!important;
+            }
+
+            .description{
+                line-height: 2;
+            }
