@@ -95,10 +95,12 @@
                 padding-right: 10px;
                 padding-top: 15px;
                 font-size:18px;
-                color: #009688!important;
+                color: #39729f!important;
                 padding-left:10px;
                
             }
+
+       
             
             .companyTitle{
                    
@@ -121,7 +123,7 @@
                 text-align: center;
                 width: 100%;
                 color: #fff!important;
-                background-color: #009688!important;
+                background-color: #39729f!important;
                     font-size: 15px;
                     line-height: 1.5;
                 margin-top: 10px;
@@ -156,7 +158,7 @@
                  padding-bottom: 3px;
                     font-size: 11px;
                  line-height: 12px;
-                background-color: #009688;
+                background-color: #39729f;
             }
             
                 .asp{
@@ -205,7 +207,7 @@
             }
 
             #current-work{
-                background-color: #009688;
+                background-color: #39729f;
                 color: white;
                 padding: 4px 10px;
                 border-radius: 3px;
@@ -217,13 +219,13 @@
             }
 
             .duration{
-                color: #009688!important;
+                color: #39729f!important;
             }
 
             .glyphicon-map-marker{
                 font-size: 17px;
                 padding-right:10px;
-                color: #009688!important;
+                color: #39729f!important;
             }
 
             .description{
