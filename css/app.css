@@ -75,13 +75,18 @@
             }
            
             #headerName{
-                    width: 100%;
+                 width: 100%;
                     position: absolute;
-                    bottom: 0;
+                    bottom: -1px;
                     left: 0;
-                    background-color: rgba(255, 255, 255, 0.5);
+                    background-color: white;
+                    background: rgba(255, 255, 255, 0.7);
                     padding-left: 10px;
 
+            }
+
+            #workHeader,#studyHeader{
+                border-bottom: 1px solid rgba(0,0,0,0.1);
             }
             
             .container{
