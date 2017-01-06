@@ -1,2 +1,2 @@
 # yashu2203.github.io
-Github Pages Repository
+My Profile Page
