@@ -153,46 +153,27 @@
                 display: block;
                 position: relative;
                 width: 90%;
-                height: 14px;
+                height: 15px;
                 background-color: lightgray;
+                margin-bottom: 30px;
             }
              .progress-bar{
                 border-radius: 10px;
                 display: block;
                 position: relative;
                 text-align: center;
-                 width: 70%;
+             
                  padding-bottom: 3px;
-                    font-size: 11px;
-                 line-height: 12px;
+                    font-size: 12px;
+                 line-height: 15px;
                 background-color: #39729f;
             }
-            
-                .asp{
-                     width: 65%;
-                }
-
-                .web{
-                     width: 60%;
-                }
-
-                .sql{
-                     width: 40%;
-                }
-
-                .sp{
-                     width: 40%;
-                }
-
-
             #page{
                          display: block;
                         margin: 0 auto;
                         margin-top: 16px;
                         max-width: 1300px;
             }
-            
-
             .glyphicon-console, .glyphicon-education{
                padding-left:10px;
                font-size:30px;
@@ -213,7 +194,7 @@
                 font-size: 30px;
             }
 
-            #current-work{
+            .currentwork{
                 background-color: #39729f;
                 color: white;
                 padding: 4px 10px;

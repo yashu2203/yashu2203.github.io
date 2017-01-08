@@ -6,55 +6,32 @@
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" href="css/app.css"/>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        </script>
-      
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/app/app.js"></script>
+        <script type="text/javascript" src="js/app/Services/CVDataService.js"></script>
+        <script type="text/javascript" src="js/app/Controllers/CVCtrl.js"></script>
+        <script type="text/javascript" src="js/app/Directives/skillBar.js"></script>
     </head>
 
-    <body>
+    <body ng-app="CVApp" ng-controller="CVCtrl">
         <div id="page">
         <div class="leftNav">
             <div>
             <div id="leftNavHeader">
-                <img src="images/profile.jpg" alt="Profile Image"/>
-                <div id="headerName"><h2 style="    font-weight: bolder;">Yashwanth Rao</h2></div>   
+                <img ng-src="images/profile.jpg" alt="Profile Image"/>
+                <div id="headerName"><h2 style="font-weight: bolder;">{{data.Profile.name}}</h2></div>   
             </div>
             
              <div class="container">
-                    <p><span class="glyphicon glyphicon-briefcase icon" aria-hidden="true"></span>Full Stack .NET Developer</p>
-                    <p><span class="glyphicon glyphicon-home icon" aria-hidden="true"></span>Coimbatore, India</p>
-                    <p><span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span><a href="mailto:yashu2203@gmail.com">Yashu2203@gmail.com</a></p>
-                    <p><span class="glyphicon glyphicon-earphone icon" aria-hidden="true"></span><a href="tel:+91-9840570282">+91-9840570282</a></p>
+                    <p><span class="glyphicon glyphicon-briefcase icon" aria-hidden="true"></span>{{data.Profile.profession}}</p>
+                    <p><span class="glyphicon glyphicon-home icon" aria-hidden="true"></span>{{data.Profile.location}}</p>
+                    <p><span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span><a href="mailto:{{data.Profile.email}}">{{data.Profile.email}}</a></p>
+                    <p><span class="glyphicon glyphicon-earphone icon" aria-hidden="true"></span><a href="tel:{{data.Profile.phone}}">{{data.Profile.phone}}</a></p>
                     <hr/>
                  
                     <p><span class="glyphicon glyphicon-asterisk icon"></span><span style="font-size:20px;">Skills</span></p>
-                    <div class="SkillsList">
-                        <p>
-                        <p>ASP.NET MVC</p>
-                            
-                            <span class="progress-bg"><span class="progress-bar asp">65%</span></span>
-                        </p>
-                 
-                        <p>
-                        <p>Front End Web Development</p>
-                            
-                            <span class="progress-bg"><span class="progress-bar web">60%</span></span>
-                        </p>
-                 
-                        <p>
-                        <p>SQL Server</p>
-                            
-                            <span class="progress-bg"><span class="progress-bar sql">40%</span></span>
-                        </p>
-                 
-                        <p>
-                        <p>SharePoint</p>
-                            
-                            <span class="progress-bg"><span class="progress-bar sp">40%</span></span>
-                        </p>
-                 
-                            
-                       
+                    <div class="SkillsList">           
+                           <div ng-repeat="skill in data.Skills"  skill-level level={{skill.level}} name="{{skill.name}}"></div>      
                     </div>
                 </div>
             
@@ -68,11 +45,11 @@
                 </div>
                 
                 <div id="experiences" >
-                    <div>
-                    <p class="companyTitle">.NET Developer / Vernalis Systems </p>
-                    <p><span class="glyphicon glyphicon-map-marker" ></span>Coimbatore, India</p>
-                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>Feb 2016 - </span><span id="current-work">Current</span></p>
-                       <p class="description" >I am working as a Full Stack .NET Developer with experience in AngularJS, Angular 2, Responsive Web Design, ASP.NET MVC, WEB API and SQL Server/MySQL.<br/>Worked as SharePoint Developer for a short period of time</p> 
+                    <div ng-repeat="workexperience in data.Workexperiences">
+                    <p class="companyTitle">{{workexperience.designation}} / {{workexperience.workplace}}</p>
+                    <p><span class="glyphicon glyphicon-map-marker" ></span>{{workexperience.location}}</p>
+                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>{{workexperience.from}} - </span><span ng-class="{currentwork: workexperience.to === 'Current'}">{{workexperience.to}}</span></p>
+                       <p class="description" >{{workexperience.description}}</p> 
                     </div>
                 </div>
                 
@@ -86,74 +63,27 @@
                 </div>
                 
               <div id="studies">
-                    <div>
-                        <p class="companyTitle">Rajalakshmi Engineering College</p>
-                        <p><span class="glyphicon glyphicon-map-marker" ></span>Chennai, India</p>
-                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>2012 - 2016</span></p>
-                       <p class="description">Bachelor of Engineering - Computer Science</p> 
-                    </div>
-                  
+                    <div ng-repeat="study in data.studies">
+                        <p class="companyTitle">{{study.place}}</p>
+                        <p><span class="glyphicon glyphicon-map-marker" ></span>{{study.location}}</p>
+                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>{{study.from}} - {{study.to}}</span></p>
+                       <p class="description">{{study.description}}</p> 
                         <hr>
-                  
-                  
-                   <div >
-                    <p class="companyTitle">Padma Sarangapani School</p>
-                       <p><span class="glyphicon glyphicon-map-marker"></span>Chennai, India</p>
-                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>2010 - 2012</span></p>
-                       <p class="description">Higher Secondary School</p> 
-                    </div>  
-                  
-                       <hr>
-                  
-                  <div>
-                    <p class="companyTitle">Padma Sarangapani School</p>
-                       <p><span class="glyphicon glyphicon-map-marker"></span>Chennai, India</p>
-                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>2009 - 2010</span></p>
-                       <p class="description">High School</p> 
-                    </div>  
-                  
-                    <hr>  
-                  
+                    </div>                  
                 </div>    
             </div>
         </div>
-    
       </div>
         
         <footer>
             <p>Find me on social media.</p>
-          <a href="http://www.facebook.com/yashu2203" target="_blank">
-          <i id="facebook-icon" class="fa fa-facebook-official" title="Facebook"></i>
+          <a ng-repeat="link in data.SocialLinks" href="{{link.href}}" target="_blank">
+          <i class="{{link.class}}" title="{{link.title}}"></i>
           </a>  
-       <a href="http://www.instagram.com/rayo.22/" target="_blank">
-        <i id="instagram-icon" class="fa fa-instagram" title="Instagram"></i>
-        </a>
-   <a href="http://twitter.com/Yashu_2203" target="_blank">
-    <i id="twitter-icon" class="fa fa-twitter" title="Twitter"></i>
-    </a>
-   <a href="https://github.com/yashu2203" target="_blank">
-   <i id="github-icon" class="fa fa-github" title="Github"></i>
-   </a>
-   <a href="http://stackoverflow.com/users/5123443/yashwanth-rao" target="_blank">
-      <i id="stack-icon" class="fa fa-stack-overflow" title="Stack Overflow"></i>
-      </a>
-   <a href="https://plus.google.com/106419812150472354669" target="_blank">
-         <i id="gplus-icon" class="fa fa-google-plus" title="Google Plus"></i>
-         </a>
-   <a href="https://www.snapchat.com/add/yashu2203" target="_blank">
-              <i id="snap-icon" class="fa fa-snapchat" title="Snap Chat"></i>
-   </a>
-
-       
-           
-            
-         
-      
      
-        </footer>
-        
 
-       
+        </footer>
+     
     </body>
     
 </html>

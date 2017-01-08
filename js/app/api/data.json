@@ -1,0 +1,99 @@
+{
+    "Profile":{
+        "name":"Yashwanth Rao",
+        "location":"Coimbatore, India",
+        "profession":"Full Stack .NET Developer",
+        "email":"yashu2203@gmail.com",
+        "phone":"+91-9840570282"
+    },
+    "Skills":[
+        {
+            "name":"ASP.NET MVC",
+            "level":"65"
+        },
+         {
+            "name":"Web Development",
+            "level":"60"
+        },
+         {
+            "name":"SQL Server",
+            "level":"40"
+        },
+         {
+            "name":"SharePoint",
+            "level":"40"
+        }
+    ],
+    "Workexperiences":[
+        {
+            "designation":".NET Developer",
+            "workplace":"Vernalis Systems",
+            "location":"Coimbatore, India",
+            "from":"Feb 2016",
+            "to":"Current",
+            "description":"I am working as a Full Stack .NET Developer with experience in AngularJS, Angular 2, Responsive Web Design, ASP.NET MVC, WEB API and SQL Server/MySQL.Worked as a  SharePoint Developer for a short period of time"
+        }
+    ],
+
+    "studies":[
+        {
+            "place":"Rajalakshmi Engineering College",
+            "location":"Chennai, India",
+            "from":"2012",
+            "to":"2016",
+            "description":"Bachelor of Engineering - Computer Science"
+
+        },
+        {
+            "place":"Padma Sarangapani School",
+            "location":"Chennai, India",
+            "from":"2010",
+            "to":"2012",
+            "description":"Higher Secondary School"
+
+        },
+        {
+            "place":"Padma Sarangapani School",
+            "location":"Chennai, India",
+            "from":"2009",
+            "to":"2010",
+            "description":"High School"
+
+        }
+    ],
+    "SocialLinks":[
+        {
+            "href":"http://www.facebook.com/yashu2203",
+            "class":"fa fa-facebook-official",
+            "title":"Facebook"
+        }, {
+            "href":"http://www.instagram.com/rayo.22/",
+            "class":"fa fa-instagram",
+            "title":"Instagram"
+        }
+        , {
+            "href":"http://twitter.com/Yashu_2203",
+            "class":"fa fa-twitter",
+            "title":"Twitter"
+        }, {
+            "href":"https://github.com/yashu2203",
+            "class":"fa fa-github",
+            "title":"Github"
+        },
+        {
+              "href":"http://stackoverflow.com/users/5123443/yashwanth-rao",
+            "class":"fa fa-stack-overflow",
+            "title":"Stack Overflow"
+        },
+         {
+              "href":"https://plus.google.com/106419812150472354669",
+            "class":"fa fa-google-plus",
+            "title":"Google Plus"
+        }, 
+        {
+            "href":"https://www.snapchat.com/add/yashu2203",
+            "class":"fa fa-snapchat",
+            "title":"Snapchat"
+        }
+    ]
+}
