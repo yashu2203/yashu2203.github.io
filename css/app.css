@@ -64,6 +64,22 @@
            
             
                 }
+                  @media only screen and (max-width: 400px) {
+                
+                              #more-button{
+                color: #39729f;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    width: 30%;
+    font-size: 11px!important;
+    box-sizing: border-box;
+    margin-top: 10px;
+            }
+            
+                }
             
             img{
                 width: 100%;
@@ -222,12 +238,14 @@
 
 
             #more-button{
-              color: #39729f;
+                color: #39729f;
     background-color: white;
     border-radius: 5px;
     padding: 5px;
     display: block;
     margin: auto;
     width: 30%;
+    font-size: 15px;
+    box-sizing: border-box;
     margin-top: 10px;
             }
