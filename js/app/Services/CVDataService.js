@@ -2,10 +2,10 @@
 
 angular.module('CVApp').service('CVDataService',["$http","$q",function($http,$q) {
           
-            this.getData = function () {
+            this.getCVData = function () {
                  var deferred = $q.defer(); 
                  
-                      $http.get("/js/app/api/data.json")
+                      $http.get("/js/app/api/cvdata.json")
                     .then(function(response) {
                       deferred.resolve(response.data);
                     });          
@@ -13,6 +13,5 @@ angular.module('CVApp').service('CVDataService',["$http","$q",function($http,$q)
 }            
 
 }]);
-
 
 })();

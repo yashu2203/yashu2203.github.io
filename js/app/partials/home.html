@@ -1,0 +1,73 @@
+  <div id="page" ng-controller="CVCtrl">
+        <div class="leftNav">
+            <div>
+            <div id="leftNavHeader">
+                <img ng-src="{{data.Profile.image}}" alt="Profile Image"/>
+                <div id="headerName"><h2 style="font-weight: bolder;">{{data.Profile.name}}</h2></div>   
+            </div>
+            
+             <div class="container">
+                    <p><span class="glyphicon glyphicon-briefcase icon" aria-hidden="true"></span>{{data.Profile.profession}}</p>
+                    <p><span class="glyphicon glyphicon-home icon" aria-hidden="true"></span>{{data.Profile.location}}</p>
+                    <p><span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span><a href="mailto:{{data.Profile.email}}">{{data.Profile.email}}</a></p>
+                    <p><span class="glyphicon glyphicon-earphone icon" aria-hidden="true"></span><a href="tel:{{data.Profile.phone}}">{{data.Profile.phone}}</a></p>
+                    <hr/>
+                 
+                    <p><span class="glyphicon glyphicon-asterisk icon"></span><span style="font-size:20px;">Skills</span></p>
+                    <div class="SkillsList">           
+                           <div ng-repeat="skill in data.Skills"  skill-level level={{skill.level}} name="{{skill.name}}"></div>      
+                    </div>
+                </div>
+            
+          </div>  
+        </div>
+        <div class="content">
+            <div >
+                
+                <div id="workHeader">
+                <span class="glyphicon glyphicon-console icon"></span><span id="work-header-text">Work Experience</span>
+                </div>
+                
+                <div id="experiences" >
+                    <div ng-repeat="workexperience in data.Workexperiences">
+                    <p class="companyTitle">{{workexperience.designation}} / {{workexperience.workplace}}</p>
+                    <p><span class="glyphicon glyphicon-map-marker" ></span>{{workexperience.location}}</p>
+                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>{{workexperience.from}} - </span><span ng-class="{currentwork: workexperience.to === 'Current'}">{{workexperience.to}}</span></p>
+                       <p class="description" >{{workexperience.description}}</p> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="content">
+            <div >
+             <div id="studyHeader">
+                <span class="glyphicon glyphicon-education icon"></span><span id="education-header-text">Education</span>
+                </div>
+                
+              <div id="studies">
+                    <div ng-repeat="study in data.studies">
+                        <p class="companyTitle">{{study.place}}</p>
+                        <p><span class="glyphicon glyphicon-map-marker" ></span>{{study.location}}</p>
+                        <p class="duration"><span class="glyphicon glyphicon-calendar" ></span><span>{{study.from}} - {{study.to}}</span></p>
+                       <p class="description">{{study.description}}</p> 
+                        <hr>
+                    </div>                  
+                </div>    
+            </div>
+        </div>
+         <footer>
+             <div>
+              <input type="button" value="More About Me!" id="more-button" ng-click="goToAbout()"/>
+             </div>
+            <p>Find me on social media.</p>
+          <a ng-repeat="link in data.SocialLinks" href="{{link.href}}" target="_blank">
+          <i class="{{link.class}}" title="{{link.title}}"></i>
+          </a>  
+     
+         
+
+        </footer>
+      </div>
+         
