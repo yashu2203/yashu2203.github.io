@@ -77,6 +77,8 @@
     font-size: 11px!important;
     box-sizing: border-box;
     margin-top: 10px;
+        outline: none;
+    border: none;
             }
             
                 }
@@ -248,4 +250,6 @@
     font-size: 15px;
     box-sizing: border-box;
     margin-top: 10px;
+        outline: none;
+    border: none;
             }
