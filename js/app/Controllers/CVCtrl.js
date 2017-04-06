@@ -4,8 +4,8 @@
             $scope.data = result; 
              });  
 
-              $scope.goToAbout = function(){
-                    $state.go("about");
+              $scope.goToFeedback = function(){
+                    $state.go("feedback");
         }
   
     }]);

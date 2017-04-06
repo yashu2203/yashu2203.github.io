@@ -14,9 +14,9 @@
             contoller:'CVCtrl'
         })
 
-        .state('about', {
-             url: '/about',
-            templateUrl: 'js/app/partials/about.html',
+        .state('feedback', {
+             url: '/feedback',
+            templateUrl: 'js/app/partials/feedback.html',
             contoller:'CVAboutCtrl'
         });
         
