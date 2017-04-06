@@ -3,7 +3,7 @@
     angular.module('CVApp',['ui.router']);
 
 
-         angular.module('CVApp').config(function($stateProvider, $urlRouterProvider) {
+         angular.module('CVApp').config(function($stateProvider, $urlRouterProvider,$locationProvider) {
     
     $urlRouterProvider.otherwise('/');
     
@@ -19,7 +19,8 @@
             templateUrl: 'js/app/partials/feedback.html',
             contoller:'CVAboutCtrl'
         });
-        
+       
 });
 
 })();
+

@@ -10,19 +10,19 @@
     "Skills":[
         {
             "name":"ASP.NET MVC",
-            "level":"65"
+            "level":"75"
         },
          {
             "name":"Web Development",
-            "level":"60"
+            "level":"70"
         },
          {
             "name":"SQL Server",
-            "level":"40"
+            "level":"50"
         },
          {
             "name":"SharePoint",
-            "level":"40"
+            "level":"50"
         }
     ],
     "Workexperiences":[
